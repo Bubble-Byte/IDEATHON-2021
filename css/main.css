@@ -482,6 +482,13 @@ ul.block-topic li {
     width: 160px;
     border-radius: 8px;
     padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.wat-grp i{
+    font-size: 18px;
+    margin-right: 20px;
 }
 .block-tabs,
 .block-tab {
@@ -810,7 +817,6 @@ select.error {
     flex-direction: column;
 }
 .block-sponsor img {
-    opacity: .18;
     width: 85%;
 }
 .block-sponsor span{
@@ -1525,5 +1531,17 @@ select.error {
         top: 100%;
         margin-top: 10px;
         left: 10%;
+    }
+    .block-img{
+        height: 164px;
+    }
+    .block-ticket .block-price .cur{
+        left:-30px;
+    }
+    .display-none{
+        display: none;
+    }
+    .sugar{
+        margin: 10px 0;
     }
 }
