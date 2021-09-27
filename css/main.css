@@ -590,10 +590,7 @@ ul.block-topic li {
 .block-tab .block-detail .speaker strong {
     font-weight: 500;
 }
-.block-tab .block-detail .block-text {
-    opacity: 0;
-    max-height: 0;
-}
+
 .block-tab .block-detail .block-text {
     padding-top: 20px;
     max-height: 300px;
