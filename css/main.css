@@ -594,7 +594,7 @@ ul.block-topic li {
     opacity: 0;
     max-height: 0;
 }
-.block-tab .block-detail:hover .block-text {
+.block-tab .block-detail .block-text {
     padding-top: 20px;
     max-height: 300px;
     opacity: 1;
@@ -1533,7 +1533,7 @@ select.error {
         left: 10%;
     }
     .block-img{
-        height: 164px;
+        height: 104px;
     }
     .block-ticket .block-price .cur{
         left:-30px;
