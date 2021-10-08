@@ -362,7 +362,7 @@ h1.large {
 /* Speakers section*/
 
 .block-img {
-    height: 350px;
+    height: 150px;
     position: relative;
 }
 .block-speaker .block-img:after {
@@ -385,7 +385,7 @@ h1.large {
     right: 0;
     position: absolute;
     top: 0;
-    width: 1px;
+   
     z-index: 4;
 }
 .block-content .col-sm-3:last-child .block-img:after {
@@ -682,7 +682,7 @@ ul.block-topic li {
 }
 .block-ticket .block-price .price {
     color: #cccccc;
-    font-size: 95px;
+    font-size: 63px;
     font-weight: 700;
     position: relative;
     margin-bottom: 20px;
@@ -810,14 +810,17 @@ select.error {
     display: flex;
     justify-content: center;
     align-items: center;
-	flex-wrap: wrap;
+	
     flex-direction: column;
 }
 .block-sponsor img {
     width: 85%;
 }
 .block-sponsor span{
-	opacity: .18;
+	width: 100%;
+    margin-left: 28px;
+    margin-top: 10px;
+    transition: margin-top 0.3s ease;
 }
 
 .block-sponsor:hover img, .block-sponsor:hover span{
@@ -826,6 +829,10 @@ select.error {
     -webkit-transform: scale(1.10);
     -ms-transform: scale(1.10);
     -moz-transform: scale(1.10);
+}
+.block-sponsor:hover span{
+    margin-top: 15px;
+    transition: margin-top 0.3s ease;
 }
 
 
@@ -1386,6 +1393,10 @@ select.error {
     }
 }
 @media only screen and (max-width: 479px) {
+    .block-img {
+        height: 100px !important;
+        margin-left: 30px;
+    }
     input,
     textarea {
         -webkit-appearance: none;
@@ -1519,15 +1530,17 @@ select.error {
         font-size: 62px;
     }
     .block-sponsor{
-        margin: 10px 0;
         flex-direction: column;
         position: relative;
+        margin: 45px 0;
+        
     }
     .block-sponsor span{
         position: absolute;
         top: 100%;
         margin-top: 10px;
-        left: 10%;
+        left:0;
+        margin-left: 0px;
     }
     .block-img{
         height: 104px;
@@ -1541,4 +1554,54 @@ select.error {
     .sugar{
         margin: 10px 0;
     }
+}
+
+.but.no-rad{
+    border-radius:0px !important;
+}
+.block-img{
+    height: 150px;
+}
+.msi,.msi-2{
+background:#fff;
+margin: 20px 20px;
+height: 75px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.msi-2{
+    background: none;
+}
+.msi-2 img{
+    padding-top: 0px;
+}
+.rit{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width:100%;
+}
+@media(max-width:409px){
+    .rit{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mob-dis{
+        display: none;
+    }
+    .more-text{
+        margin-bottom: 80px;
+    }
+}
+
+.msins,.rit-logo{
+    margin: 0 10px;
+}
+.msins{
+    padding: 5px 0;
+    margin-top: 9px;
+}
+.more-text{
+    margin-top: 18px;
 }
